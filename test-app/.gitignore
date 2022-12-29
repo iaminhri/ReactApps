@@ -9,6 +9,8 @@
 package-lock.json
 package.json
 
+/public
+
 # testing
 /coverage
 
