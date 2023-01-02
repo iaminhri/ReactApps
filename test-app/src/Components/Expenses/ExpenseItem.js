@@ -6,19 +6,19 @@ import './ExpenseItem.css';
 
 
 const ExpenseItem = (props) => {
-    const [title, setTitle] = useState(props.title); // hook -> useState returns exactly two elements
+    // const [title, setTitle] = useState(props.title); // hook -> useState returns exactly two elements
 
-    const clickHandler = () =>{
-        setTitle('Updated!!!'); // onclick manipulates this data and changes the state of the following properties.
-    };
+    // const clickHandler = () =>{
+    //     setTitle('Updated!!!'); // onclick manipulates this data and changes the state of the following properties.
+    // };
     return (
         <Card className="expense-item">
             <ExpenseDate date = {props.date} />
             <div className="expense-item_desc">
-                <h2> {title} </h2>
+                <h2> {props.title} </h2>
                 <div className="expense-item_price"> ${props.amount} </div>
             </div>
-            <button onClick={clickHandler}>Change Title</button>
+            {/* <button onClick={clickHandler}>Change Title</button> */}
         </Card>
     );
 }

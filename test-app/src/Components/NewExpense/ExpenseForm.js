@@ -52,13 +52,13 @@ const ExpenseForm = (props) => {
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
-            date: new Date(enteredDate)
+            date: new Date(enteredDate),
         };
 
         console.log(expenseData);
 
         // Calling a method from parent NewExpense Component.
-        props.onSaveExpenseData(expenseData); // props value -> passed from NewExpense Component 
+        props.onSaveExpenseData(expenseData); // props.onSaveExpenseData() -> pointer to a method in NewExpense Component 
         
         // clearning form after 
         setEnteredTitle('');
