@@ -12,14 +12,17 @@ const ExpenseItem = (props) => {
     //     setTitle('Updated!!!'); // onclick manipulates this data and changes the state of the following properties.
     // };
     return (
-        <Card className="expense-item">
+        <li>
+            <Card className="expense-item">
             <ExpenseDate date = {props.date} />
             <div className="expense-item_desc">
                 <h2> {props.title} </h2>
                 <div className="expense-item_price"> ${props.amount} </div>
             </div>
             {/* <button onClick={clickHandler}>Change Title</button> */}
-        </Card>
+            </Card>
+        </li>
+        
     );
 }
 

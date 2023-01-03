@@ -55,8 +55,6 @@ const ExpenseForm = (props) => {
             date: new Date(enteredDate),
         };
 
-        console.log(expenseData);
-
         // Calling a method from parent NewExpense Component.
         props.onSaveExpenseData(expenseData); // props.onSaveExpenseData() -> pointer to a method in NewExpense Component 
         
@@ -83,7 +81,8 @@ const ExpenseForm = (props) => {
                 </div>
             </div>
             <div className="new-expense__actions">
-                 <button type='submit'> Add Expense </button>
+                <button type='submit' onClick={props.onCancel}> Cancel </button>
+                <button type='submit'> Add Expense </button>
             </div>
         </form>
     )
