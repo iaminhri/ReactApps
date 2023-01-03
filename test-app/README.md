@@ -1,4 +1,5 @@
-#Expense Tracker Application: React Learnings And Project View.
+# Expense Tracker Application: React Learnings And Project View.
+# No DB and Backend Implemented
 
 ![R1](https://user-images.githubusercontent.com/44377810/210305377-3def2b05-4fd9-4b29-b53f-e7363585c9c3.PNG)
 
